@@ -494,7 +494,7 @@ bot.command("ytmp3", async (ctx) => {
 
     try {
         // Panggil API untuk mengambil audio
-        const response = await axios.get(`https://api.siputzx.my.id/api/d/ytmp3?url=${encodeURIComponent(text)}`);
+        const response = await axios.get(`https://api.siputzx.my.id/api/dl/youtube/mp3?url=${encodeURIComponent(text)}`);
         const result = response.data;
 
         if (result.status) {
