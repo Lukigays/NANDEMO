@@ -448,7 +448,7 @@ bot.command("play", async (ctx) => {
         }
 
         // Ambil audio dari API
-        const apiResponse = await axios.get(`https://api.caliph.biz.id/api/yts?query=gustixa&apikey=aec0035403cf4890${encodeURIComponent(res.url)}`);
+        const apiResponse = await axios.get(`https://api.caliph.biz.id/api/yts?query=${encodeURIComponent(res.url)}`);
         const anu = apiResponse.data;
 
         if (anu.status) {
